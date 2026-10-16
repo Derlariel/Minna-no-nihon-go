@@ -1,3 +1,70 @@
 <!doctype html>
-<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#245c4c"><meta name="description" content="เรียนภาษาญี่ปุ่นสำหรับคนไทย บทเรียนเสริมตามหัวข้อ Minna no Nihongo 1 ฉบับภาษาไทย บทที่ 1–12 พร้อมเสียงอ่าน โรมาจิ และแบบฝึกหัด"><title>Kotoba — เรียนญี่ปุ่นทีละก้าว</title><link rel="stylesheet" href="style.css"></head>
-<body><aside class="sidebar"><a class="brand" href="#home"><span class="brand-symbol">こ</span><span>kotoba<span class="brand-sub">ことば · เรียนญี่ปุ่นทีละก้าว</span></span></a><div class="course-label">พื้นที่การเรียนรู้ของคุณ</div><nav id="main-nav" aria-label="เมนูหลัก"></nav><div class="sidebar-course"><span class="eyebrow">YOUR LEARNING PATH</span><h3>มินนะ โนะ นิฮงโกะ 1</h3><p>ฉบับภาษาไทย · 2nd Edition</p><div class="progress-track"><span id="side-progress"></span></div><div id="side-progress-label" class="small"></div></div><div class="course-label chapter-label">สารบัญบทเรียน <span>12 บท</span></div><nav id="lesson-nav" aria-label="เลือกบทเรียน"></nav><div class="sidebar-footer">少しずつ、毎日。<br><span>วันละนิด ก็เก่งขึ้นได้ทุกวัน</span></div></aside><div class="shell"><header class="topbar"><button id="menu" class="icon-button mobile-menu" aria-label="เปิดเมนู"></button><div class="breadcrumb">ห้องเรียนของฉัน <span>/</span> <b id="breadcrumb">ภาพรวมการเรียนรู้</b></div><div class="top-actions"><span class="beginner"><i></i> ระดับเริ่มต้น</span><button id="sound-settings" class="icon-button" aria-label="ตั้งค่าเสียง"></button><span class="avatar">学</span></div></header><main id="app"></main><footer class="page-footer">Kotoba · เรียนรู้ทีละคำ เติบโตทีละก้าว <button id="about">เกี่ยวกับบทเรียน</button></footer></div><div id="toast" role="status" aria-live="polite"></div><dialog id="settings"><form method="dialog"><button class="close icon-button" aria-label="ปิด">×</button><h2>ตั้งค่าการอ่าน</h2><p class="muted">เสียงสังเคราะห์ภาษาญี่ปุ่นจากอุปกรณ์ของคุณ</p><label for="voice">เสียงภาษาญี่ปุ่น</label><select id="voice"></select><label for="rate">ความเร็ว <span id="rate-label">0.85×</span></label><input type="range" id="rate" min="0.5" max="1.2" step="0.05"><label class="check"><input type="checkbox" id="romaji-setting"> แสดงคำอ่านโรมาจิ</label><p class="small muted">หากไม่มีเสียงญี่ปุ่น ให้ติดตั้งเสียงภาษาญี่ปุ่นในการตั้งค่าอุปกรณ์แล้วเปิดเว็บใหม่ เสียงนี้ไม่ใช่เสียงจากซีดีหนังสือ</p><button class="primary" value="close">บันทึกการตั้งค่า</button></form></dialog><dialog id="about-dialog"><form method="dialog"><button class="close icon-button" aria-label="ปิด">×</button><span class="eyebrow">ABOUT KOTOBA</span><h2>เพื่อนเรียนข้างหนังสือของคุณ</h2><p>บทเรียนเสริมภาษาไทย สรุปหัวข้อหลักตามลำดับบทที่ 1–12 ของ มินนะ โนะ นิฮงโกะ 1 [2nd Edition] ฉบับภาษาไทย โดยอ้างอิงโครงสร้างจากไฟล์ที่คุณให้มา</p><p>คำอธิบาย ประโยคตัวอย่าง และแบบฝึกหัดบนเว็บเขียนขึ้นใหม่ ไม่ได้ถอดเนื้อหา คำศัพท์ หรือแบบฝึกหัดทุกข้อจากหนังสือ จึงควรใช้เรียนควบคู่กับหนังสือฉบับเต็ม</p><p class="muted">ฉบับภาษาไทยเล่ม 1 มีบทที่ 1–12 ส่วนบทที่ 13–25 อยู่เล่ม 2 เว็บนี้เป็นสื่อการเรียนอิสระ ไม่มีความเกี่ยวข้องกับผู้จัดพิมพ์ ความคืบหน้าและคำที่บันทึกเก็บในเบราว์เซอร์เครื่องนี้</p><button class="primary">เข้าใจแล้ว</button></form></dialog><script src="data.js"></script><script src="app.js"></script></body></html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#245c4c">
+    <meta name="description"
+        content="เรียนภาษาญี่ปุ่นสำหรับคนไทย บทเรียนเสริมตามหัวข้อ Minna no Nihongo 1 ฉบับภาษาไทย บทที่ 1–12 พร้อมเสียงอ่าน โรมาจิ และแบบฝึกหัด">
+    <title>Kotoba — เรียนญี่ปุ่นทีละก้าว</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar"><a class="brand" href="#home"><span class="brand-symbol">こ</span><span>kotoba<span
+                    class="brand-sub">ことば · เรียนญี่ปุ่นทีละก้าว</span></span></a>
+        <div class="course-label">พื้นที่การเรียนรู้ของคุณ</div>
+        <nav id="main-nav" aria-label="เมนูหลัก"></nav>
+        <div class="sidebar-course"><span class="eyebrow">YOUR LEARNING PATH</span>
+            <h3>มินนะ โนะ นิฮงโกะ 1</h3>
+            <p>ฉบับภาษาไทย · 2nd Edition</p>
+            <div class="progress-track"><span id="side-progress"></span></div>
+            <div id="side-progress-label" class="small"></div>
+        </div>
+        <div class="course-label chapter-label">สารบัญบทเรียน <span>12 บท</span></div>
+        <nav id="lesson-nav" aria-label="เลือกบทเรียน"></nav>
+        <div class="sidebar-footer">少しずつ、毎日。<br><span>วันละนิด ก็เก่งขึ้นได้ทุกวัน</span></div>
+    </aside>
+    <div class="shell">
+        <header class="topbar"><button id="menu" class="icon-button mobile-menu" aria-label="เปิดเมนู"></button>
+            <div class="breadcrumb">ห้องเรียนของฉัน <span>/</span> <b id="breadcrumb">ภาพรวมการเรียนรู้</b></div>
+            <div class="top-actions"><span class="beginner"><i></i> ระดับเริ่มต้น</span><button id="sound-settings"
+                    class="icon-button" aria-label="ตั้งค่าเสียง"></button><span class="avatar">学</span></div>
+        </header>
+        <main id="app"></main>
+        <footer class="page-footer">Kotoba · เรียนรู้ทีละคำ เติบโตทีละก้าว <button id="about">เกี่ยวกับบทเรียน</button>
+        </footer>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="settings">
+        <form method="dialog"><button class="close icon-button" aria-label="ปิด">×</button>
+            <h2>ตั้งค่าการอ่าน</h2>
+            <p class="muted">เสียงสังเคราะห์ภาษาญี่ปุ่นจากอุปกรณ์ของคุณ</p><label
+                for="voice">เสียงภาษาญี่ปุ่น</label><select id="voice"></select><label for="rate">ความเร็ว <span
+                    id="rate-label">0.85×</span></label><input type="range" id="rate" min="0.5" max="1.2"
+                step="0.05"><label class="check"><input type="checkbox" id="romaji-setting"> แสดงคำอ่านโรมาจิ</label>
+            <p class="small muted">หากไม่มีเสียงญี่ปุ่น ให้ติดตั้งเสียงภาษาญี่ปุ่นในการตั้งค่าอุปกรณ์แล้วเปิดเว็บใหม่
+                เสียงนี้ไม่ใช่เสียงจากซีดีหนังสือ</p><button class="primary" value="close">บันทึกการตั้งค่า</button>
+        </form>
+    </dialog>
+    <dialog id="about-dialog">
+        <form method="dialog"><button class="close icon-button" aria-label="ปิด">×</button><span class="eyebrow">ABOUT
+                KOTOBA</span>
+            <h2>เพื่อนเรียนข้างหนังสือของคุณ</h2>
+            <p>บทเรียนเสริมภาษาไทย สรุปหัวข้อหลักตามลำดับบทที่ 1–12 ของ มินนะ โนะ นิฮงโกะ 1 [2nd Edition] ฉบับภาษาไทย
+                โดยอ้างอิงโครงสร้างจากไฟล์ที่คุณให้มา</p>
+            <p>คำอธิบาย ประโยคตัวอย่าง และแบบฝึกหัดบนเว็บเขียนขึ้นใหม่ ไม่ได้ถอดเนื้อหา คำศัพท์
+                หรือแบบฝึกหัดทุกข้อจากหนังสือ จึงควรใช้เรียนควบคู่กับหนังสือฉบับเต็ม</p>
+            <p class="muted">ฉบับภาษาไทยเล่ม 1 มีบทที่ 1–12 ส่วนบทที่ 13–25 อยู่เล่ม 2 เว็บนี้เป็นสื่อการเรียนอิสระ
+                ไม่มีความเกี่ยวข้องกับผู้จัดพิมพ์ ความคืบหน้าและคำที่บันทึกเก็บในเบราว์เซอร์เครื่องนี้</p><button
+                class="primary">เข้าใจแล้ว</button>
+        </form>
+    </dialog>
+    <script src="data.js"></script>
+    <script src="summary-data.js"></script>
+    <script src="summary.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
